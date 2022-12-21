@@ -34,4 +34,10 @@ public class Cupboard implements IFurnitureAction{
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
     }
+
+    public void buildFurniture() {
+        this.assembled = true;
+    }
+
+
 }
