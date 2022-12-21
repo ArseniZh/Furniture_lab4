@@ -39,5 +39,7 @@ public class Cupboard implements IFurnitureAction{
         this.assembled = true;
     }
 
-
+    public void dismantleFurniture() {
+        this.assembled = false;
+    }
 }
