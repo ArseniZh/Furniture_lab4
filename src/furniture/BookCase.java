@@ -15,4 +15,23 @@ public class BookCase extends Cupboard{
         this.bookCapacity = bookCapacity;
         this.shelvesNumber = shelvesNumber;
     }
+
+    public void setBookCapacity(int bookCapacity) {
+        this.bookCapacity = bookCapacity;
+    }
+    public int getBookCapacity() {
+        return this.bookCapacity;
+    }
+    public void setShelvesNumber(int shelvesNumber) {
+        this.shelvesNumber = shelvesNumber;
+    }
+    public int getShelvesNumber() {
+        return this.shelvesNumber;
+    }
+
+    public String toString() {
+        return super.toString()
+                + "\nbook capacity: " + bookCapacity
+                + "\nshelves number: " + shelvesNumber;
+    }
 }
