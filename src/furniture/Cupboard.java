@@ -71,9 +71,9 @@ public abstract class Cupboard implements IFurnitureAction{
         return "x coordinate: " + xCoordinate
                 + "\ny coordinate: " + yCoordinate
                 + "\ncolor: " + color
-                + "\nheight: " + height
-                + "\nwidth: " + width
-                + "\nweight: " + weight
+                + "\nheight: " + height + " m"
+                + "\nwidth: " + width + " m"
+                + "\nweight: " + weight + " kg"
                 + "\nassembled: " + assembled;
     }
 }
