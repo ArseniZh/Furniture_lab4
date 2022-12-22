@@ -1,13 +1,12 @@
 package furniture;
 
-public class Cupboard implements IFurnitureAction{
+public abstract class Cupboard implements IFurnitureAction{
     private double xCoordinate;
     private double yCoordinate;
     private String color;
     private double height;
     private double width;
     private double weight;
-
     private boolean assembled;
 
     public Cupboard() {
@@ -30,6 +29,31 @@ public class Cupboard implements IFurnitureAction{
         this.assembled = assembled;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public String getColor() {
+        return this.color;
+    }
+    public void setHeight(double height) {
+        this.height = height;
+    }
+    public double getHeight() {
+        return this.height;
+    }
+    public void setWidth(double width) {
+        this.width = width;
+    }
+    public double getWidth() {
+        return this.width;
+    }
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+    public double getWeight() {
+        return this.weight;
+    }
+
     public void move(double xCoordinate, double yCoordinate) {
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
@@ -41,5 +65,15 @@ public class Cupboard implements IFurnitureAction{
 
     public void dismantleFurniture() {
         this.assembled = false;
+    }
+
+    public String toString() {
+        return "x coordinate: " + xCoordinate
+                + "\ny coordinate: " + yCoordinate
+                + "\ncolor: " + color
+                + "\nheight: " + height
+                + "\nwidth: " + width
+                + "\nweight: " + weight
+                + "\nassembled: " + assembled;
     }
 }
